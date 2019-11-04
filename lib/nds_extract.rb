@@ -33,7 +33,7 @@ end
   while directors_index < director_data.length do
       directors_name = director_data[directors_index][:name]
       grand_total[directors_name] = 0  
-      movies = nds[directors_index][:movies]
+      movies = director_data[directors_index][:movies]
       movies_index = 0 
     while movies_index < movies.length do
   #binding.pry
