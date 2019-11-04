@@ -31,7 +31,7 @@ end
   movies_index = 0 
   worldwide_grosses = {} 
       while movies_index < movies.length do
-     worldwide_grosses[directors_] += movies[movies_index][:worldwide_gross]
+     worldwide_grosses += movies[movies_index][:worldwide_gross]
     end
       movies_index += 1
     
