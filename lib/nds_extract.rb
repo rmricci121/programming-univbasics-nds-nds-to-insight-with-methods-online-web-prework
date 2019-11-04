@@ -31,7 +31,7 @@ end
   movies_index = 0 
   worldwide_grosses = 0
   #binding.pry
-  while movies_index < director_data.length do 
+  while movies_index < director_data[:movies].length do 
     directors_total = director_data[:movies][movies_index][:worldwide_gross]
     worldwide_grosses += directors_total
   movies_index +=1
