@@ -31,17 +31,16 @@ end
   directors_index = 0 
   grand_total = {} 
   director_data = nds
-  # while directors_index < director_data.length do
-  #     directors_name = director_data[directors_index][:name]
-  #     grand_total[directors_name] = 0  
-  #     movies = director_data[directors_index][:movies]
-  #     movies_index = 0 
+   while directors_index < director_data.length do
+       directors_name = director_data[directors_index][:name]
+       grand_total[directors_name] = 0  
+       movies = director_data[directors_index][:movies]
+       movies_index = 0 
     while movies_index < movies.length do
-  #binding.pry
      grand_total[directors_name] += movies[movies_index][:worldwide_gross]
       movies_index += 1
     end
-    #directors_index += 1
+    directors_index += 1
   end
 
   return grand_total
