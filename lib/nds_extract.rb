@@ -41,7 +41,7 @@ end
      grand_total[directors_name] += movies[movies_index][:worldwide_gross]
       movies_index += 1
     end
-    directors_index += 1
+    #directors_index += 1
   end
 
   return grand_total
