@@ -30,6 +30,7 @@ end
  def gross_for_director(director_data)
   directors_index = 0 
   grand_total = {} 
+  director_data = nds
   while directors_index < director_data.length do
       directors_name = director_data[directors_index][:name]
       grand_total[directors_name] = 0  
