@@ -33,7 +33,7 @@ end
   
   while movies_index < director_data.length do 
     directors_total = director_data[movies_index][:worldwide_gross]
-    worldwide_grosses[director_data] = 0
+    worldwide_grosses[director_data] += directors_total
   end
   movies_index +=1
 end
