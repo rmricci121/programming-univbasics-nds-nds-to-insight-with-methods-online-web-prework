@@ -29,11 +29,12 @@ end
 # using director_data as input
  def gross_for_director(director_data)
   movies_index = 0 
-  worldwide_grosses ={}
+  worldwide_grosses = 0
   #binding.pry
   while movies_index < director_data.length do 
     directors_total = director_data[:movies][movies_index][:worldwide_gross]
-    worldwide_grosses[director_data] += directors_total
+    worldwide_grosses += directors_total
   end
   movies_index +=1
+  return worldwide_grosses
 end
